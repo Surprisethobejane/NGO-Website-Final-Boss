@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>P. Masemola Foundation - Empowering Youth in South Africa</title>
+    <meta name="description" content="P. Masemola Foundation empowers youth in rural and township communities through education, leadership development, and entrepreneurship programs.">
+    <meta name="keywords" content="youth empowerment, South Africa, education, leadership, entrepreneurship, non-profit, rural communities">
+    <meta property="og:title" content="P. Masemola Foundation - Empowering Youth in South Africa">
+    <meta property="og:description" content="Empowering youth in rural and township communities through education, leadership development, and entrepreneurship programs.">
+    <meta name="twitter:title" content="P. Masemola Foundation - Empowering Youth in South Africa">
+    <meta name="twitter:description" content="Empowering youth in rural and township communities through education, leadership development, and entrepreneurship programs.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --color-primary: #B14D91;
+            --color-secondary: #8A3A6F;
+            --color-accent: #D4A5C7;
+            --color-earth: #F2E6F0;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.2;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+        }
+        
+        .btn-secondary {
+            @apply bg-white hover:bg-gray-50 text-purple-600 font-semibold py-3 px-6 rounded-lg border-2 border-purple-600 transition-colors duration-200;
+        }
+        
+        .section-padding {
+            @apply py-16 px-4 md:px-8;
+        }
+        
+        .container-max {
+            @apply max-w-6xl mx-auto;
+        }
+        
+        .card {
+            @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
+        }
+        
+        .nav-link {
+            @apply text-gray-700 hover:text-purple-600 font-medium transition-colors duration-200;
+        }
+        
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23B14D91' fill-opacity='0.1'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/ProgramsOverview.js"></script>
+    <script type="text/babel" src="components/About.js"></script>
+    <script type="text/babel" src="components/Programs.js"></script>
+    <script type="text/babel" src="components/GetInvolved.js"></script>
+    <script type="text/babel" src="components/Contact.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>

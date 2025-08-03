@@ -60,7 +60,7 @@ function Footer({ setCurrentPage }) {
                 </div>
                 <div className="flex items-center">
                   <div className="icon-phone text-purple-600 mr-3"></div>
-                  <a href="tel:+27111234567" className="text-gray-400 text-sm hover:text-white transition-colors">+27 11 123 4567</a>
+                  <a href="tel:+27662950540" className="text-gray-400 text-sm hover:text-white transition-colors">+27 66 295 0540</a>
                 </div>
                 <div className="flex items-center">
                   <div className="icon-mail text-purple-600 mr-3"></div>

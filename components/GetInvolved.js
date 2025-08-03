@@ -122,7 +122,7 @@ function GetInvolved() {
                   </div>
                   <div className="flex items-center">
                     <div className="icon-phone text-purple-600 mr-3"></div>
-                    <a href="tel:+27111234567" className="text-gray-700 hover:text-purple-600 transition-colors">+27 11 123 4567</a>
+                    <a href="tel:+27662950540" className="text-gray-700 hover:text-purple-600 transition-colors">+27 66 295 0540</a>
                   </div>
                   <div className="flex items-center">
                     <div className="icon-map-pin text-purple-600 mr-3"></div>

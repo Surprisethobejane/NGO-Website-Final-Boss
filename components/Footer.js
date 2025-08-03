@@ -24,14 +24,8 @@ function Footer({ setCurrentPage }) {
                 <a href="https://www.facebook.com/profile.php?id=100095305279324" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors">
                   <div className="icon-facebook text-lg"></div>
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors">
-                  <div className="icon-twitter text-lg"></div>
-                </a>
                 <a href="https://www.instagram.com/p.masemola_foundation/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors">
                   <div className="icon-instagram text-lg"></div>
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors">
-                  <div className="icon-linkedin text-lg"></div>
                 </a>
               </div>
             </div>

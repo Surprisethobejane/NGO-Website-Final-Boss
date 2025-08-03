@@ -35,11 +35,46 @@ function Footer({ setCurrentPage }) {
             <div>
               <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
               <ul className="space-y-3">
-                <li><a href="#" onClick={() => setCurrentPage('about')} className="text-gray-400 hover:text-white transition-colors cursor-pointer">About Us</a></li>
-                <li><a href="#" onClick={() => setCurrentPage('programs')} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Our Programs</a></li>
-                <li><a href="#" onClick={() => setCurrentPage('get-involved')} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Get Involved</a></li>
-                <li><a href="#" onClick={() => setCurrentPage('contact')} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Contact</a></li>
-                <li><a href="#" onClick={() => setCurrentPage('home')} className="text-gray-400 hover:text-white transition-colors cursor-pointer">News & Updates</a></li>
+                <li>
+                  <button
+                    onClick={() => setCurrentPage('about')}
+                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                  >
+                    About Us
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => setCurrentPage('programs')}
+                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                  >
+                    Our Programs
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => setCurrentPage('get-involved')}
+                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                  >
+                    Get Involved
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => setCurrentPage('contact')}
+                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                  >
+                    Contact
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => setCurrentPage('home')}
+                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                  >
+                    News & Updates
+                  </button>
+                </li>
               </ul>
             </div>
             
@@ -72,9 +107,24 @@ function Footer({ setCurrentPage }) {
                 © {currentYear} P. Masemola Foundation. All rights reserved.
               </p>
               <div className="flex space-x-6 text-sm">
-                <a href="#" onClick={() => alert('Privacy Policy - Coming Soon')} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Privacy Policy</a>
-                <a href="#" onClick={() => alert('Terms of Service - Coming Soon')} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Terms of Service</a>
-                <a href="#" onClick={() => alert('Cookie Policy - Coming Soon')} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Cookie Policy</a>
+                <button
+                  onClick={() => setCurrentPage('privacy')}
+                  className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                >
+                  Privacy Policy
+                </button>
+                <button
+                  onClick={() => setCurrentPage('terms')}
+                  className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                >
+                  Terms of Service
+                </button>
+                <button
+                  onClick={() => setCurrentPage('cookie')}
+                  className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                >
+                  Cookie Policy
+                </button>
               </div>
             </div>
             <div className="border-t border-gray-800 pt-4 mt-4">
@@ -93,7 +143,9 @@ function Footer({ setCurrentPage }) {
       </footer>
     );
   } catch (error) {
-    console.error('Footer component error:', error);
+    console.error("Error in Footer component:", error);
     return null;
   }
 }
+
+export default Footer;

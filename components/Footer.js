@@ -8,9 +8,11 @@ function Footer({ setCurrentPage }) {
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center">
-                  <div className="icon-users text-lg text-white"></div>
-                </div>
+                <img 
+                  src="img/Logo Icon.png" 
+                  alt="P. Masemola Foundation Logo" 
+                  className="w-10 h-10 rounded-full object-contain bg-white"
+                />
                 <div>
                   <h3 className="text-xl font-bold">P. Masemola Foundation</h3>
                   <p className="text-gray-400 text-sm">Empowering Youth</p>

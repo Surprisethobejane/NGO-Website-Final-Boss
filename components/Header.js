@@ -37,6 +37,7 @@ function Header({ currentPage, setCurrentPage }) {
                   {item.name}
                 </button>
               ))}
+              <a href="gallery.html" className="nav-link">Gallery</a>
             </nav>
             
             {/* Mobile Menu Button */}
@@ -63,6 +64,7 @@ function Header({ currentPage, setCurrentPage }) {
                   {item.name}
                 </button>
               ))}
+              <a href="gallery.html" className="block w-full text-left py-2 nav-link">Gallery</a>
             </nav>
           )}
         </div>

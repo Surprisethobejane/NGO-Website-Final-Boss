@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - P. Masemola Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+  <style type="text/tailwindcss">
+    @layer theme {
+      :root {
+        --color-primary: #B14D91;
+        --color-secondary: #8A3A6F;
+        --color-accent: #D4A5C7;
+        --color-earth: #F2E6F0;
+      }
+    }
+
+    @layer base {
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 { font-weight: 600; line-height: 1.2; }
+    }
+
+    @layer components {
+      .btn-primary { @apply bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200; }
+      .btn-secondary { @apply bg-white hover:bg-gray-50 text-purple-600 font-semibold py-3 px-6 rounded-lg border-2 border-purple-600 transition-colors duration-200; }
+      .section-padding { @apply py-16 px-4 md:px-8; }
+      .container-max { @apply max-w-6xl mx-auto; }
+      .card { @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300; }
+      .nav-link { @apply text-gray-700 hover:text-purple-600 font-medium transition-colors duration-200; }
+      .hero-pattern {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23B14D91' fill-opacity='0.1'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+    }
+
+    @layer utilities {
+      .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Top bar -->
+  <header class="bg-white/80 backdrop-blur sticky top-0 z-30 border-b border-gray-100">
+    <div class="container-max flex items-center justify-between py-4 px-4">
+      <a href="index.html" class="nav-link inline-flex items-center gap-2">
+        <i class="lucide-arrow-left text-purple-600"></i>
+        <span>Back to Home</span>
+      </a>
+      <h1 class="text-xl md:text-2xl font-semibold text-gray-800">Gallery</h1>
+      <span class="w-24"></span>
+    </div>
+  </header>
+
+  <!-- Hero / Intro -->
+  <section class="hero-pattern section-padding">
+    <div class="container-max text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-purple-700 text-shadow">Moments from Our Programs</h2>
+      <p class="mt-3 text-gray-600 max-w-2xl mx-auto">A curated look at the impact and joy across our initiatives. Click any photo to view larger.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <main class="section-padding pt-8">
+    <div class="container-max">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <!-- Images from img 2/ -->
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.20_0e75e0ee.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.20_0e75e0ee.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.20_fa3fc4a3.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.20_fa3fc4a3.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.21_9a94580c.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.21_9a94580c.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.21_9ccd6ca6.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.21_9ccd6ca6.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.21_c7040c0e.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.21_c7040c0e.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.22_630eda62.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.22_630eda62.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.22_b8c219e4.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.22_b8c219e4.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.22_e81e8401.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.22_e81e8401.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.23_4e853d7d.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.23_4e853d7d.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.23_73d1366c.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.23_73d1366c.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.23_906a1fca.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.23_906a1fca.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.24_035631da.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.24_035631da.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.24_b910947b.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.24_b910947b.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.24_df614bcb.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.24_df614bcb.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.24_f19fcd27.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.24_f19fcd27.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.25_a5e6a3eb.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.25_a5e6a3eb.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.25_e52aa1de.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.25_e52aa1de.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.05.25_f0d45eed.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.05.25_f0d45eed.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_237b22d4.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_237b22d4.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_3f68e37c.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_3f68e37c.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_416b15be.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_416b15be.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_a254355d.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_a254355d.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_c8f24767.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_c8f24767.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_e3f74bc2.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.15.29_e3f74bc2.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.15.30_5367d96c.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.15.30_5367d96c.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+        <figure class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+          <img src="img 2/WhatsApp Image 2025-10-14 at 11.15.30_e8b20d9e.jpg" alt="Gallery image" loading="lazy" class="h-40 w-full object-cover md:h-48 group-hover:scale-105 transition-transform duration-300" />
+          <figcaption class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></figcaption>
+          <button data-src="img 2/WhatsApp Image 2025-10-14 at 11.15.30_e8b20d9e.jpg" class="absolute inset-0"></button>
+        </figure>
+        
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4">
+    <button id="closeBtn" class="absolute top-4 right-4 btn-secondary bg-white/90">Close</button>
+    <img id="lightboxImg" src="" alt="Expanded view" class="max-h-[85vh] max-w-[90vw] rounded-lg shadow-2xl" />
+  </div>
+
+  <script>
+    // Simple lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeBtn = document.getElementById('closeBtn');
+
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-src]');
+      if (btn) {
+        const src = btn.getAttribute('data-src');
+        lightboxImg.src = src;
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+      }
+    });
+
+    const closeLightbox = () => {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      lightboxImg.src = '';
+    };
+
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>

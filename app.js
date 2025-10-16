@@ -64,6 +64,12 @@ function App() {
           return <Contact />;
         case 'gallery':
           return <Gallery />;
+        case 'privacy':
+          return <PrivacyPolicy />;
+        case 'terms':
+          return <TermsOfService />;
+        case 'cookie':
+          return <CookiePolicy />;
         default:
           return (
             <div>

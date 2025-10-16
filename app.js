@@ -38,6 +38,13 @@ function App() {
   try {
     const [currentPage, setCurrentPage] = React.useState('home');
     
+    // Scroll to top whenever page changes
+    React.useEffect(() => {
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }, 0);
+    }, [currentPage]);
+    
     const renderPage = () => {
       switch(currentPage) {
         case 'home':
@@ -71,8 +78,8 @@ function App() {
         {renderPage()}
         <Footer setCurrentPage={setCurrentPage} />
         
-        {/* Sticky Donation Button */}
-        <div className="fixed bottom-6 right-6 z-50">
+        {/* Sticky Donation Button - HIDDEN (remove 'hidden' class to restore) */}
+        <div className="fixed bottom-6 right-6 z-50 hidden">
           <a 
             href="https://ko-fi.com/suprisethobejane"
             target="_blank"

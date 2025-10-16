@@ -14,35 +14,31 @@ function Header({ currentPage, setCurrentPage }) {
       <header className="bg-white shadow-md sticky top-0 z-40" data-name="header" data-file="components/Header.js">
         <div className="container-max">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center">
               <img 
                 src="img/Logo Icon.png" 
                 alt="P. Masemola Foundation Logo" 
-                className="w-32 h-32 object-contain -m-2"
+                className="w-20 h-20 md:w-28 md:h-28 object-contain flex-shrink-0"
               />
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">P. Masemola Foundation</h1>
-                <p className="text-sm text-gray-600">peace.humanity.love</p>
-              </div>
             </div>
             
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex space-x-4 lg:space-x-8">
               {navigation.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => setCurrentPage(item.id)}
-                  className={`nav-link ${currentPage === item.id ? 'text-purple-600' : ''}`}
+                  className={`nav-link whitespace-nowrap ${currentPage === item.id ? 'text-purple-600' : ''}`}
                 >
                   {item.name}
                 </button>
               ))}
-              <a href="gallery.html" className="nav-link">Gallery</a>
+              <a href="gallery.html" className="nav-link whitespace-nowrap">Gallery</a>
             </nav>
             
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden p-2"
+              className="md:hidden p-2 ml-2 flex-shrink-0"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <div className={`icon-${isMenuOpen ? 'x' : 'menu'} text-xl`}></div>
@@ -51,7 +47,7 @@ function Header({ currentPage, setCurrentPage }) {
           
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <nav className="md:hidden py-4 border-t">
+            <nav className="md:hidden py-4 border-t px-4 space-y-1">
               {navigation.map((item) => (
                 <button
                   key={item.id}
@@ -59,12 +55,12 @@ function Header({ currentPage, setCurrentPage }) {
                     setCurrentPage(item.id);
                     setIsMenuOpen(false);
                   }}
-                  className={`block w-full text-left py-2 nav-link ${currentPage === item.id ? 'text-purple-600' : ''}`}
+                  className={`block w-full text-left py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors nav-link ${currentPage === item.id ? 'text-purple-600' : ''}`}
                 >
                   {item.name}
                 </button>
               ))}
-              <a href="gallery.html" className="block w-full text-left py-2 nav-link">Gallery</a>
+              <a href="gallery.html" className="block w-full text-left py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors nav-link">Gallery</a>
             </nav>
           )}
         </div>

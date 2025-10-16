@@ -28,7 +28,7 @@
       .btn-primary { @apply bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200; }
       .btn-secondary { @apply bg-white hover:bg-gray-50 text-purple-600 font-semibold py-3 px-6 rounded-lg border-2 border-purple-600 transition-colors duration-200; }
       .section-padding { @apply py-16 px-4 md:px-8; }
-      .container-max { @apply max-w-6xl mx-auto; }
+      .container-max { @apply max-w-6xl mx-auto px-4; }
       .card { @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300; }
       .nav-link { @apply text-gray-700 hover:text-purple-600 font-medium transition-colors duration-200; }
       .hero-pattern {
@@ -45,12 +45,13 @@
   <!-- Top bar -->
   <header class="bg-white/80 backdrop-blur sticky top-0 z-30 border-b border-gray-100">
     <div class="container-max flex items-center justify-between py-4 px-4">
-      <a href="index.html" class="nav-link inline-flex items-center gap-2">
+      <a href="index.html" class="nav-link inline-flex items-center gap-2 flex-shrink-0">
         <i class="lucide-arrow-left text-purple-600"></i>
-        <span>Back to Home</span>
+        <span class="hidden sm:inline">Back to Home</span>
+        <span class="sm:hidden">Back</span>
       </a>
-      <h1 class="text-xl md:text-2xl font-semibold text-gray-800">Gallery</h1>
-      <span class="w-24"></span>
+      <h1 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 text-center flex-1 px-2">Gallery</h1>
+      <span class="w-16 sm:w-24 flex-shrink-0"></span>
     </div>
   </header>
 

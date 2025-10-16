@@ -40,7 +40,7 @@ function ProgramsOverview() {
                 <div className={`w-16 h-16 rounded-full ${program.color} flex items-center justify-center mx-auto mb-6`}>
                   <div className={`icon-${program.icon} text-2xl`}></div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">{program.title}</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 break-words">{program.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{program.description}</p>
               </div>
             ))}

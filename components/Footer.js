@@ -33,12 +33,13 @@ function Footer({ setCurrentPage }) {
             </div>
             
             <div>
-              <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
+              <h4 className="text-lg font-bold mb-6">Quick Links</h4>
               <ul className="space-y-3">
                 <li>
                   <button
                     onClick={() => setCurrentPage('about')}
-                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0 text-left w-full font-normal"
+                    style={{ WebkitAppearance: 'none', textAlign: 'left' }}
                   >
                     About Us
                   </button>
@@ -46,7 +47,8 @@ function Footer({ setCurrentPage }) {
                 <li>
                   <button
                     onClick={() => setCurrentPage('programs')}
-                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0 text-left w-full font-normal"
+                    style={{ WebkitAppearance: 'none', textAlign: 'left' }}
                   >
                     Our Programs
                   </button>
@@ -54,7 +56,8 @@ function Footer({ setCurrentPage }) {
                 <li>
                   <button
                     onClick={() => setCurrentPage('get-involved')}
-                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0 text-left w-full font-normal"
+                    style={{ WebkitAppearance: 'none', textAlign: 'left' }}
                   >
                     Get Involved
                   </button>
@@ -62,7 +65,8 @@ function Footer({ setCurrentPage }) {
                 <li>
                   <button
                     onClick={() => setCurrentPage('contact')}
-                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0 text-left w-full font-normal"
+                    style={{ WebkitAppearance: 'none', textAlign: 'left' }}
                   >
                     Contact
                   </button>
@@ -70,7 +74,8 @@ function Footer({ setCurrentPage }) {
                 <li>
                   <button
                     onClick={() => setCurrentPage('home')}
-                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"
+                    className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0 text-left w-full font-normal"
+                    style={{ WebkitAppearance: 'none', textAlign: 'left' }}
                   >
                     News & Updates
                   </button>
@@ -79,7 +84,7 @@ function Footer({ setCurrentPage }) {
             </div>
             
             <div>
-              <h4 className="text-lg font-semibold mb-6">Contact Info</h4>
+              <h4 className="text-lg font-bold mb-6">Contact Info</h4>
               <div className="space-y-3">
                 <div className="flex items-start">
                   <div className="icon-map-pin text-purple-600 mr-3 mt-1"></div>
@@ -93,9 +98,9 @@ function Footer({ setCurrentPage }) {
                   <div className="icon-phone text-purple-600 mr-3"></div>
                   <a href="tel:+27662950540" className="text-gray-400 text-sm hover:text-white transition-colors">+27 66 295 0540</a>
                 </div>
-                <div className="flex items-center">
-                  <div className="icon-mail text-purple-600 mr-3"></div>
-                  <a href="mailto:pmasemolafoundation@gmail.com" className="text-gray-400 text-sm hover:text-white transition-colors">pmasemolafoundation@gmail.com</a>
+                <div className="flex items-start">
+                  <div className="icon-mail text-purple-600 mr-3 mt-0.5 flex-shrink-0"></div>
+                  <a href="mailto:pmasemolafoundation@gmail.com" className="text-gray-400 text-sm hover:text-white transition-colors break-all">pmasemolafoundation@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -106,7 +111,7 @@ function Footer({ setCurrentPage }) {
               <p className="text-gray-400 text-sm mb-4 md:mb-0">
                 © {currentYear} P. Masemola Foundation. All rights reserved.
               </p>
-              <div className="flex space-x-6 text-sm">
+              <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
                 <button
                   onClick={() => setCurrentPage('privacy')}
                   className="text-gray-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0"

@@ -62,6 +62,8 @@ function App() {
           return <GetInvolved />;
         case 'contact':
           return <Contact />;
+        case 'gallery':
+          return <Gallery />;
         default:
           return (
             <div>
@@ -73,7 +75,7 @@ function App() {
     };
 
     return (
-      <div className="min-h-screen bg-gray-50" data-name="app" data-file="app.js">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300" data-name="app" data-file="app.js">
         <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
         {renderPage()}
         <Footer setCurrentPage={setCurrentPage} />

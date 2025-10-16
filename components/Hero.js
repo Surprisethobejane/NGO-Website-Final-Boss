@@ -52,15 +52,15 @@ function Hero({ setCurrentPage }) {
     }, []);
 
     return (
-      <section className="hero-pattern bg-gradient-to-r from-purple-50 to-pink-50 section-padding" data-name="hero" data-file="components/Hero.js">
+      <section className="hero-pattern bg-gradient-to-r from-purple-50 to-pink-50 dark:from-gray-800 dark:to-gray-900 section-padding transition-colors duration-300" data-name="hero" data-file="components/Hero.js">
         <div className="container-max">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 text-shadow">
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 text-shadow">
                 Empowering Youth. 
-                <span className="text-purple-600"> Building Futures.</span>
+                <span className="text-purple-600 dark:text-purple-400"> Building Futures.</span>
               </h1>
-              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
                 The P. Masemola Foundation transforms lives in rural and township communities 
                 through education, leadership development, and entrepreneurship programs.
               </p>
@@ -88,7 +88,7 @@ function Hero({ setCurrentPage }) {
             </div>
             
             <div className="relative">
-              <div className="bg-white rounded-2xl shadow-2xl p-2">
+              <div className="bg-white dark:bg-gray-700 rounded-2xl shadow-2xl p-2 transition-colors duration-300">
                 <img 
                   src={images[currentImageIndex]} 
                   alt="NGO activities showcase" 

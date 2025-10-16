@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Dark mode script - runs before page renders to prevent flash -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            // Default to dark mode if no saved preference
+            const shouldBeDark = savedTheme === 'dark' || (!savedTheme && true); // Change 'true' to 'prefersDark' to respect system preference
+            
+            if (shouldBeDark) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -21,6 +35,11 @@
     <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
     <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
 
     <style type="text/tailwindcss">
@@ -104,6 +123,7 @@
     <script type="text/babel" src="components/Programs.js"></script>
     <script type="text/babel" src="components/GetInvolved.js"></script>
     <script type="text/babel" src="components/Contact.js"></script>
+    <script type="text/babel" src="components/Gallery.js"></script>
     <script type="text/babel" src="components/Footer.js"></script>
     <script type="text/babel" src="app.js"></script>
 </body>

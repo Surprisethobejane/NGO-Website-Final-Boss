@@ -1,6 +1,18 @@
 function Gallery() {
   try {
     const images = [
+      // Images from main img folder
+      'img/Educational Support.jpg',
+      'img/Youth Leadership.jpg',
+      'img 2/Community Engagement.jpg',
+      'img/img1.jpg',
+      'img/img2.jpg',
+      'img/img3.jpg',
+      'img/img4.jpg',
+      'img/img 5.jpg',
+      'img/img6.jpg',
+      'img/img7.jpg',
+      // Images from img 2 folder
       'img 2/WhatsApp Image 2025-10-14 at 11.05.20_0e75e0ee.jpg',
       'img 2/WhatsApp Image 2025-10-14 at 11.05.20_fa3fc4a3.jpg',
       'img 2/WhatsApp Image 2025-10-14 at 11.05.21_9a94580c.jpg',
@@ -11,7 +23,6 @@ function Gallery() {
       'img 2/WhatsApp Image 2025-10-14 at 11.05.22_e81e8401.jpg',
       'img 2/WhatsApp Image 2025-10-14 at 11.05.23_4e853d7d.jpg',
       'img 2/WhatsApp Image 2025-10-14 at 11.05.23_73d1366c.jpg',
-      'img 2/WhatsApp Image 2025-10-14 at 11.05.23_906a1fca.jpg',
       'img 2/WhatsApp Image 2025-10-14 at 11.05.24_035631da.jpg',
       'img 2/WhatsApp Image 2025-10-14 at 11.05.24_b910947b.jpg',
       'img 2/WhatsApp Image 2025-10-14 at 11.05.24_df614bcb.jpg',

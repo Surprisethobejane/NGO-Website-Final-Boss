@@ -35,7 +35,7 @@ function Programs() {
           'Poverty cycle intervention',
           'Local partnership facilitation'
         ],
-        image: 'img/Community Engagement.webp'
+        image: 'img 2/Community Engagement.jpg'
       }
     ];
 
@@ -79,7 +79,7 @@ function Programs() {
                   <img 
                     src={program.image} 
                     alt={program.title} 
-                    className={`w-full h-80 object-cover rounded-2xl shadow-lg ${program.title === 'Community Engagement' ? 'rotate-180' : ''}`}
+                    className={`w-full h-80 object-cover rounded-2xl shadow-lg ${program.title === 'Community Engagement' ? '' : ''}`}
                   />
                 </div>
               </div>

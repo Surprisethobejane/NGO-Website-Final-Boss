@@ -6,13 +6,18 @@ function Hero({ setCurrentPage }) {
     const images = [
       'img/Educational Support.jpg',
       'img/Youth Leadership.jpg',
-      'img/Community Engagement.webp',
       'img/img1.jpg',
+      'img 2/WhatsApp Image 2025-10-14 at 11.05.20_0e75e0ee.jpg',
       'img/img2.jpg',
+      'img 2/WhatsApp Image 2025-10-14 at 11.05.21_9ccd6ca6.jpg',
       'img/img3.jpg',
+      'img 2/WhatsApp Image 2025-10-14 at 11.05.23_4e853d7d.jpg',
       'img/img4.jpg',
+      'img 2/WhatsApp Image 2025-10-14 at 11.05.24_df614bcb.jpg',
       'img/img 5.jpg',
+      'img 2/WhatsApp Image 2025-10-14 at 11.15.29_3f68e37c.jpg',
       'img/img6.jpg',
+      'img 2/WhatsApp Image 2025-10-14 at 11.15.30_5367d96c.jpg',
       'img/img7.jpg'
     ];
 
@@ -92,7 +97,7 @@ function Hero({ setCurrentPage }) {
                 <img 
                   src={images[currentImageIndex]} 
                   alt="NGO activities showcase" 
-                  className={`w-full h-80 object-cover rounded-xl transition-all duration-1500 ease-in-out ${images[currentImageIndex] === 'img/Community Engagement.webp' ? 'rotate-180' : ''}`}
+                  className="w-full h-80 object-cover rounded-xl transition-all duration-1500 ease-in-out"
                   style={{ minHeight: '320px' }}
                 />
               </div>
